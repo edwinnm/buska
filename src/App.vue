@@ -30,7 +30,7 @@
       
         <v-col class="primary lighten-1 py-4 text-center white--text"
         cols="12">
-          {{ new Date().getFullYear() }} — <strong>edwinnm - Mauricio Calle</strong>
+          {{ new Date().getFullYear() }} — <strong>edwinnm - Mauri C</strong>
         </v-col>
       
     </v-footer>
