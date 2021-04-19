@@ -6,11 +6,11 @@
       </h3>
     </v-card-title>
     <v-row>
-      <v-col cols="12" lg="9">
+      <v-col cols="12" lg="8">
         <h3 class="pl-5">Calificaciones:</h3>
         <pie-chart :valores="info.Puntos"></pie-chart>
       </v-col>
-      <v-col cols="12" lg="3" class="align-self-center">
+      <v-col cols="12" lg="4" class="align-self-center">
         <vendedor-info :info="info.Informacion"></vendedor-info>
       </v-col>
     </v-row>

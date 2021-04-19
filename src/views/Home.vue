@@ -255,7 +255,7 @@ export default {
       this.cargandoDatosIniciales = true;
       this.errorIniciales = false;
       this.mlCargado = false;
-      // this.url = this.url.substring(0,this.url.indexOf("_JM")+3)
+      this.url = this.url.substring(0,this.url.indexOf("_JM")+3)
       fetch("https://serverweb2.herokuapp.com/search?url=" + this.url)
         .then((response) => response.json())
         .then((result) => {
@@ -278,6 +278,8 @@ export default {
         });
     },
     cargarDatosBarra() {
+      this.ebayCargado = false;
+      this.olxCargado = false;
       this.errorEbay = false;
       this.errorOlx = false;
       fetch(
