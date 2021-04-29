@@ -17,7 +17,7 @@
                   <v-img :src="item.Image"></v-img>
                 </v-list-item-avatar>
                 <v-list-item-content>
-                  <v-list-item-title v-text="item.Nombre"></v-list-item-title>
+                  <v-list-item-title v-text="`${item.Nombre} / $${item.Precio}`"></v-list-item-title>
                 </v-list-item-content>
 
                 <v-list-item-icon>

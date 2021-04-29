@@ -81,6 +81,14 @@
           ></alternatives>
         </v-col>
       </v-row>
+      <v-row>
+        <v-col>
+          <comentarios
+            :comentarios="fullData.coinicidencias"
+            :coincidencias="fullData.mensajes"
+          ></comentarios>
+        </v-col>
+      </v-row>
     </div>
     <div v-if="cargandoDatosIniciales && !errorIniciales" class="contenedor">
       <v-progress-circular
@@ -181,6 +189,7 @@ import Product from "@/components/Product";
 import Vendedor from "@/components/Vendedor";
 import BarChart from "@/components/BarChart";
 import Alternatives from "@/components/Alternatives";
+import Comentarios from "@/components/Comentarios";
 
 export default {
   name: "Home",
@@ -189,6 +198,8 @@ export default {
     Product,
     BarChart,
     Alternatives,
+    Comentarios
+    
   },
   data() {
     return {
