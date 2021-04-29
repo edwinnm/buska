@@ -28,7 +28,7 @@ export default {
   props: ["comentarios","coincidencias"],
   computed:{
       parrafo(){
-          return `Se han encontrado ${this.coincidencias} mensajes relacionados con términos de fraude.`;
+          return `Se han encontrado ${this.coincidencias ? this.coincidencias:0} mensajes relacionados con términos de fraude.`;
       }
   }
 };
