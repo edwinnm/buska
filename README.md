@@ -1,5 +1,8 @@
 # Buska
 
+### Live demo
+https://edwinnm.github.io/buska/
+
 ## Project setup
 ```
 npm install
